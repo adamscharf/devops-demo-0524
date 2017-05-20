@@ -1,6 +1,21 @@
-# Compiled files
-*.tfstate
-*.tfstate.backup
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+pkg/
 
-# Module directory
-.terraform/
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+# RSpec Output
+build/*
+
+# Test Kitchen tmp Dockerfiles
+Dockerfile-kitchen-*
+
+# IntelliJ IDEA
+.idea
