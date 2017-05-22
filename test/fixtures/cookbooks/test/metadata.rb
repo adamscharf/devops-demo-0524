@@ -1,0 +1,6 @@
+name 'test'
+maintainer 'Adam Scharf'
+maintainer_email 'scharfat@gmail.com.com'
+license 'Apache 2.0'
+description 'Installs/Configures test'
+version '0.1.0'
