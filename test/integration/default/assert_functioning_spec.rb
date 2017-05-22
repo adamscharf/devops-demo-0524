@@ -1,6 +1,14 @@
+describe package('docker') do
+  it { should be_installed }
+end
+
 describe service('docker') do
   it { should be_enabled }
   it { should be_running }
+end
+
+describe package('ecs-init') do
+  it { should be_installed }
 end
 
 describe service('ecs') do
@@ -18,22 +26,3 @@ describe command('curl -s http://localhost:51678/v1/metadata') do
     should include('"Cluster":"default')
   end
 end
-
-describe package 'httpd' do
-  it { should be_installed }
-end
-
-describe service 'httpd' do
-  it { should be_enabled }
-  it { should be_running }
-end
-
-describe port(80) do
-  it { should be_listening }
-end
-
-describe file '/var/www/html/index.html' do
-  its('content') { should match 'Hello World' }
-end
-
-
