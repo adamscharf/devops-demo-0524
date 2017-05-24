@@ -1,5 +1,5 @@
 # 5/24/17 DevOps Meetup Demo
-awspec and serverspec demo
+awspec and inspec demo
 
 ## Setup
 1. You'll need to install some ruby dependencies. Use [rvm](rvm.io/rvm/install)
