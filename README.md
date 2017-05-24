@@ -26,31 +26,28 @@ ruby. I prefer the version bundled with ChefDK
 ## Demo Instructions
 1. Spin up infrastructure with test kitchen
 
-```bash
-kitchen create
-```
-
+    ```bash
+    kitchen create
+    ```
 1. Generate awspec tests for ec2
 
-```bash
-chef exec awspec ec2 <YOUR_VPC_ID> >> spec/ec2_spec.rb
-```
-
+    ```bash
+    chef exec awspec ec2 <YOUR_VPC_ID> >> spec/ec2_spec.rb
+    ```
 1. Execute awspec test by calling the `spec` Rake task
 
-```
-chef exec rake spec
-```
-
+    ```
+    chef exec rake spec
+    ```
 1. Run inspec tests via test kitchen
-```bash
-kitchen verify
-```
 
+    ```bash
+    kitchen verify
+    ```
 1. Cleanup
-```bash
-kitchen destroy
-```
+    ```bash
+    kitchen destroy
+    ```
 
 ## Resources
 * [awspec](https://github.com/k1LoW/awspec)
