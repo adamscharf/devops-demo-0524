@@ -12,7 +12,7 @@ ruby. I prefer the version bundled with ChefDK
     - If you have more than one profile in your ~/.aws/credentials file, make
     sure you set the environment var to your default profile.
     ```bash
-    $ export AWS_PROFILE=<Your-Profile>
+    $ export AWS_PROFILE=<YOUR_AWS_PROFILE_NAME>
     ```
 1. Spin up an EC2 Instance
     - Once you have an instance you can verify that your cli is working by
@@ -22,7 +22,8 @@ ruby. I prefer the version bundled with ChefDK
     ```
 
 ## [awspec](https://github.com/k1LoW/awspec)
-For more documentation on how to use awspec, [see here](https://github.com/k1LoW/awspec)
+For more documentation on how to use awspec,
+[see here](https://github.com/k1LoW/awspec)
 
 1. Generate repo structure
     ```bash
@@ -33,9 +34,13 @@ For more documentation on how to use awspec, [see here](https://github.com/k1LoW
     $ chef exec awspec generate ec2 <vpc-abc123> \
     >> spec/ec2_spec.rb
     ```
-2. Run tests
+1. Run tests
     ```bash
     $ chef exec rake
     ```
 
-## [serverspec](http://serverspec.org/) / [inspec](inspec.io)
+## [inspec](https://inspec.io) / [serverspec](http://serverspec.org/)
+For more information on serverspec or inspec, see the following sites:
+- https://inspec.io
+- http://serverspec.org
+
