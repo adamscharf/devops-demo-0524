@@ -1,6 +1,6 @@
 driver:
   name: ec2
-  aws_ssh_key_id: aws-adamscharf
+  aws_ssh_key_id: <%= ENV['PERSONAL_AWS_PRIVATE_KEY_NAME'] %>
   iam_profile_name: ecsInstanceRole
   instance_type: t2.micro
   region: us-east-1
@@ -23,12 +23,12 @@ transport:
 platforms:
   - name: amazon-linux
     driver:
-      image_id: ami-275ffe31
+      image_id: ami-275ffe31 # ECS Optimized AMI
 
 
 suites:
   - name: default
     run_list:
-  - name: web
-    run_list:
-      - recipe[test::apache]
+  # - name: web
+  #   run_list:
+  #     - recipe[test::apache]
